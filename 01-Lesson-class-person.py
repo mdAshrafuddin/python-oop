@@ -17,6 +17,11 @@ class Person:
 # create object of a class
 ashraf = Person('Ashraf', 'Male', 'Web developer')
 
+# modify the instance variable
+ashraf.name = "Tanjil"
+
 # call method
 ashraf.show()
 ashraf.work()
+
+
