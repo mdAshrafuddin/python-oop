@@ -5,3 +5,4 @@ class Employee:
 employee = Employee()
 
 employee.display()
+
