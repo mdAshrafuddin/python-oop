@@ -1,27 +1,61 @@
+# import time
+
+# class Student:
+#     # constructor
+#     def __init__(self, name):
+#         print('Inside constructor')
+#         self.name = name
+#         print('Object initialized')
+    
+#     def show(self):
+#         print('Hello, my name is ', self.name)
+
+#     # destructor
+#     def __del__(self):
+#         print('Inside destructor')
+#         print('Object destructor')
+
+# ashraf = Student('Ashraf')
+# s2 = ashraf
+
+# ashraf.show()
+
+# del ashraf
+
+# time.sleep(5)
+# print('After sleep')
+# s2.show()
+
 import time
 
-class Student:
-    # constructor
+class A:
     def __init__(self, name):
-        print('Inside constructor')
+        print('Inside the constructor')
         self.name = name
-        print('Object initialized')
-    
+
     def show(self):
-        print('Hello, my name is ', self.name)
+        print('Name ', self.name)
 
-    # destructor
     def __del__(self):
-        print('Inside destructor')
-        print('Object destructor')
+        print(self.name)
 
-ashraf = Student('Ashraf')
-s2 = ashraf
+class B():
+    def __init__(self,id):
+        print('Inside the constructor')
+        self.id = id
 
-ashraf.show()
+    def show(self):
+        print('id ', self.id)
 
-del ashraf
+    
+    def __del__(self):
+        print(self.id)
 
+# a = A('Ashraf')
+b = B(234)
+# a.show()
+b.show()
+
+del b
 time.sleep(5)
-print('After sleep')
-s2.show()
+# b.show()

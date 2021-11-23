@@ -18,3 +18,4 @@ emp = Employee('Asharf', 2340, 'Pla')
 # Calling public method of the class
 emp.show()
 emp.work()
+
